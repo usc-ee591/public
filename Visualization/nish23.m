@@ -12,13 +12,8 @@ imagesc(y,[-5 5]); title('y'); axis square;
 subplot(133); colorbar;
 imagesc(r,[0 5]*sqrt(2)); title('r'); axis square;
 
-%% visualize 2D sinc
+%% visualize Nishimura 2.3
 figure(2);
-mesh(x,y,sinc(x).*sinc(y));
-title('sinc(x) sinc(y)');
-
-%% visualize 2D jinc
-figure(3);
-mesh(x,y,jinc(r));
-title('jinc(r)');
+mesh(x,y,sinc(x).*sinc(y).*cos(2*pi*x));
+title('sinc(x) sinc(y) cos(2*pi*x)'); 
 
