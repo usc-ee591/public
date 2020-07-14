@@ -15,5 +15,5 @@ end
 if dir == 2
     us_kspace(1:1:end, 1:R:end, 1:1:end) = kspace(1:1:end, 1:R:end, 1:1:end);
 end
-
+figure; imagesc(abs(us_kspace(:,:,1)));
 end

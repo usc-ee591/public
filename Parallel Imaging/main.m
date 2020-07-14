@@ -15,10 +15,10 @@ display_Image(re_im,[]);
 %
 % Undersample 
 %
-hor_kspace  = undersample(kspace, 1, 2);
-hor_im = ifft2c(hor_kspace);
-ver_kspace  = undersample(kspace, 2, 2);
+ver_kspace  = undersample(kspace, 1, 2);
 ver_im = ifft2c(ver_kspace);
+hor_kspace  = undersample(kspace, 2, 2);
+hor_im = ifft2c(hor_kspace);
 
 %
 % Estimate Coil Sensitivity Maps
