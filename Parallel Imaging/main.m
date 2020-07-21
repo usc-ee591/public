@@ -49,3 +49,12 @@ lowr_im = ifft2c(lowr_kspace);
 Clowr_im = optimal_coilcomb(lowr_im, cmaps, eye(8));
 display_Image(Clowr_im,[]); title('Coil Combined (Smaller Kymax: PE vertical)');
 
+
+% %% FOV
+% fov_kspace = zeros(nx, size( nx/2-nx/4:1:nx/2+nx/4,2), nc);
+% fov_kspace(1:1:end, nx/2-nx/4:1:nx/2+nx/4, 1:1:end) = kspace(1:1:end, nx/2-nx/4:1:nx/2+nx/4, 1:1:end);
+% fov_im = ifft2c(fov_kspace);
+% Clowr_im = optimal_coilcomb(fov_im, cmaps, eye(8));
+% display_Image(Clowr_im,[]); title('Coil Combined (Smaller Kymax: PE vertical)');
+
+
