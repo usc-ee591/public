@@ -1,4 +1,4 @@
-# Public
+# EE 591
 
 EE 591 Magnetic Resonance Imaging and Reconstruction
 
