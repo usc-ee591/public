@@ -2,6 +2,6 @@
 
 To run it, execute:
 
->> mrdemo
+\>\> mrdemo
 
 originally prepared by Dwight Nishimura May 1995
